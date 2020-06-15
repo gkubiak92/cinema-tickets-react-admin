@@ -12,6 +12,7 @@ const firebaseConfig = {
 
 const options = {
     logging: true,
+    dontAddIdFieldToDoc: false,
 }
 
 export const firebaseDataProvider = FirebaseDataProvider(firebaseConfig, options); 
