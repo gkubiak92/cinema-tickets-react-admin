@@ -7,7 +7,7 @@ import {
   NumberField,
   ImageField,
 } from "react-admin";
-import RatingField from "../ListFields/rating-field/rating-field.component";
+import RatingField from "../../components/ListFields/rating-field/rating-field.component";
 
 const MoviesList = (props) => (
   <List {...props}>

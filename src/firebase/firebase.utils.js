@@ -1,4 +1,7 @@
-import { FirebaseDataProvider } from "react-admin-firebase";
+import {
+  FirebaseDataProvider,
+  FirebaseAuthProvider,
+} from "react-admin-firebase";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -10,12 +13,21 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
-const options = {
+const dataProviderOptions = {
   logging: true,
   dontAddIdFieldToDoc: true,
 };
 
 export const firebaseDataProvider = FirebaseDataProvider(
   firebaseConfig,
-  options
+  dataProviderOptions
+);
+
+const authProviderOptions = {
+  logging: true,
+};
+
+export const firebaseAuthProvider = FirebaseAuthProvider(
+  firebaseConfig,
+  authProviderOptions
 );
