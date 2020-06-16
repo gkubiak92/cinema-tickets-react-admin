@@ -15,18 +15,18 @@ import {
 const MovieEdit = (props) => (
   <Edit {...props}>
     <SimpleForm>
-      <TextInput source="id" />
-      <TextInput source="title" />
-      <TextInput source="description" multiline />
-      <TextInput source="stars" />
-      <TextInput source="photosUrl" />
-      <TextInput source="writer" />
-      <TextInput source="director" />
-      <TextInput source="genres" />
-      <BooleanInput source="isPopular" />
-      <BooleanInput source="isUpcoming" />
-      <NumberInput source="rating" />
-      <ArrayInput source="screeningDates">
+      <TextInput disabled source="id" fullWidth />
+      <TextInput source="title" fullWidth />
+      <TextInput source="description" multiline fullWidth />
+      <TextInput source="stars" fullWidth />
+      <TextInput source="photosUrl" fullWidth />
+      <TextInput source="writer" fullWidth />
+      <TextInput source="director" fullWidth />
+      <TextInput source="genres" fullWidth />
+      <BooleanInput source="isPopular" fullWidth />
+      <BooleanInput source="isUpcoming" fullWidth />
+      <NumberInput source="rating" fullWidth />
+      <ArrayInput source="screeningDates" fullWidth>
         <SimpleFormIterator>
           <DateTimeInput source="date" label="Date" />
           <ReferenceInput
