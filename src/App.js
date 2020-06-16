@@ -7,11 +7,15 @@ import {
 import MoviesList from "./pages/movies/movies-list.component";
 import MovieEdit from "./pages/movies/movie-edit.component";
 import MovieCreate from "./pages/movies/movie-create.component";
+//import { createBrowserHistory as createHistory } from "history";
+
+//const history = createHistory();
 
 const App = () => (
   <Admin
     authProvider={firebaseAuthProvider}
     dataProvider={firebaseDataProvider}
+    //history={history}
   >
     <Resource
       name="movies"
